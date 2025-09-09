@@ -1,0 +1,124 @@
+/* Reset some default margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  background: linear-gradient(135deg, #f4f6f9, #e6ebf5);
+  color: #333;
+  transition: background 0.4s, color 0.4s;
+}
+
+.dark-mode {
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  color: #f5f5f5;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2.2rem;
+  color: #444;
+}
+
+section {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 700px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode section {
+  background: #2c2c2c;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #357abd;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Counter text */
+#counter {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #e94e77;
+}
+
+/* FAQ */
+.faq {
+  margin: 15px 0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+  cursor: pointer;
+  color: #4a90e2;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.faq-question:hover {
+  color: #357abd;
+}
+
+.faq-answer {
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+/* Form styles */
+form label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 6px rgba(74,144,226,0.5);
+  outline: none;
+}
+
+#formMessage {
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Smooth FAQ animation */
+.hidden {
+  display: none;
+}

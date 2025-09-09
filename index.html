@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Event Handling Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Interactive JavaScript Page</h1>
+
+  <!-- Light/Dark Mode Toggle -->
+  <section>
+    <h2>Theme Toggle</h2>
+    <button id="toggleTheme">Switch Light/Dark</button>
+  </section>
+
+  <!-- Counter -->
+  <section>
+    <h2>Counter Game</h2>
+    <button id="increaseBtn">Increase</button>
+    <button id="decreaseBtn">Decrease</button>
+    <p>Count: <span id="counter">0</span></p>
+  </section>
+
+  <!-- FAQ Section -->
+  <section>
+    <h2>FAQ</h2>
+    <div class="faq">
+      <h3 class="faq-question">What is Cardano?</h3>
+      <p class="faq-answer hidden">Cardano is a blockchain platform for building secure decentralized applications.</p>
+    </div>
+    <div class="faq">
+      <h3 class="faq-question">What is JavaScript?</h3>
+      <p class="faq-answer hidden">JavaScript is a programming language that makes web pages interactive.</p>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section>
+    <h2>Signup Form</h2>
+    <form id="signupForm">
+      <label>
+        Name:
+        <input type="text" id="name" required>
+      </label>
+      <label>
+        Email:
+        <input type="email" id="email" required>
+      </label>
+      <label>
+        Password:
+        <input type="password" id="password" required>
+      </label>
+      <button type="submit">Sign Up</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- Link script -->
+  <script src="script.js"></script>
+</body>
+</html>
